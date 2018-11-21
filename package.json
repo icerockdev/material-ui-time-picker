@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "files": [
     "lib/Clock.js",
+    "src/Clock.js",
     "README.md",
     "LICENSE",
     "demo.gif"
