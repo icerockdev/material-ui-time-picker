@@ -4,7 +4,7 @@
   "description": "A time picker for material-ui 1.0-beta.",
   "main": "lib/index.js",
   "files": [
-    "lib",
+    "lib/Clock.js",
     "README.md",
     "LICENSE",
     "demo.gif"
