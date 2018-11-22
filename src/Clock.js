@@ -35,7 +35,8 @@ const styles = (theme) => ({
     userSelect: 'none',
     '&.selected': {
       color: getContrastRatio(theme.palette.primary.main, theme.palette.common.black) < 7 ? theme.palette.common.white : theme.palette.common.black
-    }
+    },
+    '&.disabled': { opacity: '0.3' }
   },
   smallNumber: {
     fontSize: '12px',
@@ -82,8 +83,7 @@ const styles = (theme) => ({
     width: 4,
     height: 4,
     borderWidth: 14
-  },
-  '&.disabled': { opacity: '0.3' }
+  }
 })
 
 const size = 256
