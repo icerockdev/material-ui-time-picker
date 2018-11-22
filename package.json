@@ -4,12 +4,13 @@
   "description": "A time picker for material-ui 1.0-beta.",
   "main": "lib/index.js",
   "files": [
-    "lib",
+    "src",
     "README.md",
     "LICENSE",
     "demo.gif"
   ],
   "scripts": {
+    "install": "npm run build",
     "test": "standard && jest",
     "test:coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "test:unit": "jest",
