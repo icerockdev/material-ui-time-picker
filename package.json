@@ -10,7 +10,7 @@
     "demo.gif"
   ],
   "scripts": {
-    "install": "npm run build",
+    "install": "npm i && npm run build",
     "test": "standard && jest",
     "test:coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "test:unit": "jest",
