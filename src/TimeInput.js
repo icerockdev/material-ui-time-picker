@@ -86,6 +86,7 @@ class TimeInput extends React.Component {
       okLabel,
       onChange, // eslint-disable-line
       value: valueProp, // eslint-disable-line
+      minutesStep,
       ...other
     } = this.props
 
@@ -111,6 +112,7 @@ class TimeInput extends React.Component {
       >
         <TimePicker
           mode={mode}
+          minutesStep={minutesStep}
           value={newValue}
           onChange={this.handleChange}
           onMinutesSelected={autoOk ? this.handleOk : null}
@@ -139,6 +141,7 @@ TimeInput.propTypes = {
   /** Sets the clock mode, 12-hour or 24-hour clocks are supported. */
   mode: PropTypes.oneOf(['12h', '24h']),
   /** Override the label of the ok button. */
+  minutesStep: PropTypes.number,
   okLabel: PropTypes.string,
   /** Callback that is called with the new date (as Date instance) when the value is changed. */
   onChange: PropTypes.func,
@@ -149,6 +152,7 @@ TimeInput.propTypes = {
 TimeInput.defaultProps = {
   autoOk: false,
   cancelLabel: 'Cancel',
+  minutesStep: 1,
   mode: '12h',
   okLabel: 'Ok'
 }
